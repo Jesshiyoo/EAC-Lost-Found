@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Found Items</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="feed-container">
+
+        <div class="feed-header">
+            <h2>Found Items</h2>
+            <button id="uploadButton" style="display: none;" onclick="showUpload()">Upload</button>
+        </div>
+
+        <div id="uploadForm" style="display: none;">
+            <h3>Upload Found Item</h3>
+
+            <form id="itemForm">
+                <input type="text" id="itemName" placeholder="Item Name" required>
+                <textarea id="itemDescription" placeholder="Description" required></textarea>
+                <input type="text" id="itemLocation" placeholder="Found Location" required>
+                <input type="file" id="itemImage" accept="image/*" required>
+
+                <button type="submit">Submit</button>
+                <button type="button" onclick="hideUpload()">Cancel</button>
+            </form>
+        </div>
+
+        <div id="items">
+            <p>No found items available.</p>
+        </div>
+
+    </div>
+
+    <script src=""></script>
+
+</body>
+</html>

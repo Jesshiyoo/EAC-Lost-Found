@@ -21,3 +21,47 @@ input {
 button {
     padding: 8px 20px;
 }
+
+
+/* Found.html */
+
+
+
+.feed-container {
+    width: 500px;
+    margin: 30px auto;
+}
+
+.feed-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.post img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: contain;
+}
+
+#uploadForm {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    width: 200px;
+    height: 80px;
+}
+
+
