@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manage Found Items</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body data-page="moderator">
+
+    <h1>Manage Found Items</h1>
+    <a href="dashboard.html">Back to Dashboard</a>
+
+    <main class="feed-container">
+
+        <div class="feed-header">
+            <h2>Found Items</h2>
+            <button onclick="showUpload()">Upload</button>
+        </div>
+
+        <div id="uploadForm" style="display: none;">
+            <h3>Upload Found Item</h3>
+
+            <form id="itemForm">
+                <input type="text" id="itemName" placeholder="Item Name" required>
+                <textarea id="itemDescription" placeholder="Description" required></textarea>
+                <input type="text" id="itemLocation" placeholder="Found Location" required>
+                <input type="file" id="itemImage" accept="image/*" required>
+
+                <button type="submit">Submit</button>
+                <button type="button" onclick="hideUpload()">Cancel</button>
+            </form>
+        </div>
+
+        <div id="items">
+            <p>No found items available.</p>
+        </div>
+
+    </main>
+
+    <script src="../script.js"></script>
+
+</body>
+</html>
